@@ -4,6 +4,7 @@
 #if($build_number)
   #set($buildNo = "(no $build_number)")
 #end
-<title>Cucumber Reports $buildNo - $reportName</title>
+##<title>Cucumber Reports $buildNo - $reportName</title>
+<title>测试报告 $buildNo - $reportName</title>
 
 #end

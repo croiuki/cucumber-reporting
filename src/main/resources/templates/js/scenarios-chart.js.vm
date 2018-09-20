@@ -12,8 +12,10 @@ $(document).ready(function() {
             ]
         }],
         labels: [
-            "Passed",
-            "Failed"
+        ##            "Passed",
+        ##            "Failed"
+            "通过",
+            "失败"
         ]
     };
 
@@ -25,7 +27,8 @@ $(document).ready(function() {
             title: {
                 display: true,
                 fontSize: 20,
-                text: "Scenarios"
+##                text: "Scenarios"
+                text: "测试用例"
             },
             circumference: Math.PI,
             rotation: Math.PI,

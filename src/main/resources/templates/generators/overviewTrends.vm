@@ -14,25 +14,29 @@
 
 #includeReportInfo()
 
-#includeLead("Trends Statistics", "The following graph shows features, scenarios and steps for a period of time.")
+###includeLead("Trends Statistics", "The following graph shows features, scenarios and steps for a period of time.")
+  #includeLead("趋势统计", "以下图表显示测试场景、测试用例及耗时的变化趋势")
 
 <div class="container-fluid" id="charts">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <h4>Features:</h4>
+##      <h4>Features:</h4>
+      <h4>测试场景:</h4>
       <canvas id="trends-features-chart" height="50"></canvas>
       <br>
 
-      <h4>Scenarios:</h4>
+##      <h4>Scenarios:</h4>
+      <h4>测试用例:</h4>
       <canvas id="trends-scenarios-chart" height="50"></canvas>
       <br>
 
-      <h4>Steps:</h4>
-      <canvas id="trends-steps-chart" height="50"></canvas>
-      <br>
+##      <h4>Steps:</h4>
+##      <canvas id="trends-steps-chart" height="50"></canvas>
+##      <br>
 
-      <h4>Durations:</h4>
-      <canvas id="trends-durations-chart" height="50"></canvas>
+##      <h4>Durations:</h4>
+##      <h4>耗时:</h4>
+##      <canvas id="trends-durations-chart" height="50"></canvas>
     </div>
   </div>
 </div>

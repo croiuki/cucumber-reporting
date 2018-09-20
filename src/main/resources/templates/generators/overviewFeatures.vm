@@ -17,8 +17,8 @@
 
 #includeReportInfo()
 
-#includeLead("Features Statistics", "The following graphs show passing and failing statistics for features")
-
+###includeLead("Features Statistics", "The following graphs show passing and failing statistics for features")
+#includeLead("测试用例执行结果", "显示测试用例执行通过和失败的执行结果")
 
 #if(!$all_features.isEmpty())
   <div class="container-fluid" id="charts">
@@ -29,7 +29,7 @@
           <ol class="carousel-indicators">
             <li data-target="#featureChartCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#featureChartCarousel" data-slide-to="1"></li>
-            <li data-target="#featureChartCarousel" data-slide-to="2"></li>
+##            <li data-target="#featureChartCarousel" data-slide-to="2"></li>
           </ol>
 
           <!-- Wrapper for slides -->
@@ -42,9 +42,9 @@
               <canvas id="scenarios-chart" height="120"></canvas>
             </div>
 
-            <div class="item">
-              <canvas id="steps-chart" height="120"></canvas>
-            </div>
+##            <div class="item">
+##              <canvas id="steps-chart" height="120"></canvas>
+##            </div>
           </div>
 
           <!-- Left and right controls -->
@@ -67,7 +67,8 @@
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      #includeStatsTable("Feature", $parallel, $all_features, $report_summary)
+##      #includeStatsTable("Feature", $parallel, $all_features, $report_summary)
+        #includeStatsTable("测试场景", $parallel, $all_features, $report_summary)
     </div>
   </div>
 </div>

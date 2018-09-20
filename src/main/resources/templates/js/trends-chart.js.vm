@@ -22,7 +22,8 @@ $(document).ready(function() {
         labels: buildNumbers,
         datasets: [
             {
-                label: "Failed",
+##                label: "Failed",
+                label: "失败",
                 data: failedFeatures,
                 fill: true,
                 lineTension: 0.1,
@@ -44,7 +45,8 @@ $(document).ready(function() {
                 spanGaps: false,
             },
             {
-                label: "Passed",
+##                label: "Passed",
+                label: "通过",
                 // TODO: since the first version stored total, not passed values this is displayed with total as not stacked
                 // later should use passedFeatures values with stacked mode
                 data: totalFeatures,
@@ -82,7 +84,8 @@ $(document).ready(function() {
         labels: buildNumbers,
         datasets: [
             {
-                label: "Failed",
+##                label: "Failed",
+                label: "失败",
                 data: failedScenarios,
                 fill: true,
                 lineTension: 0.1,
@@ -104,7 +107,8 @@ $(document).ready(function() {
                 spanGaps: false,
             },
             {
-                label: "Passed",
+##                label: "Passed",
+                label: "通过",
                 // TODO: since the first version stored total, not passed values this is displayed with total as not stacked
                 // later should use passedFeatures values with stacked mode
                 data: totalScenarios,
@@ -271,7 +275,8 @@ $(document).ready(function() {
       labels: buildNumbers,
       datasets: [
         {
-          label: "Duration",
+##          label: "Duration",
+          label: "耗时",
           data: durations,
           fill: true,
           lineTension: 0.1,

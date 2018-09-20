@@ -12,8 +12,10 @@ $(document).ready(function() {
             ]
         }],
         labels: [
-            "Passed",
-            "Failed"
+##            "Passed",
+##            "Failed"
+            "通过",
+            "失败"
         ]
     };
 
@@ -25,7 +27,8 @@ $(document).ready(function() {
             title: {
                 display: true,
                 fontSize: 20,
-                text: "Features"
+##                text: "Features"
+                text: "测试场景"
             },
             responsive: true,
             legend: {

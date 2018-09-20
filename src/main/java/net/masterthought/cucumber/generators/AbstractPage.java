@@ -70,7 +70,7 @@ public abstract class AbstractPage {
     private void generateReport() {
         context.put("report_file", getWebPage());
 
-        Template template = engine.getTemplate("templates/generators/" + templateFileName);
+        Template template = engine.getTemplate("templates/generators/" + templateFileName, "UTF-8");
         File reportFile = new File(configuration.getReportDirectory(),
                 ReportBuilder.BASE_DIRECTORY + File.separatorChar + getWebPage());
         try (Writer writer = new OutputStreamWriter(new FileOutputStream(reportFile), StandardCharsets.UTF_8)) {

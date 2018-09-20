@@ -10,9 +10,11 @@
 
 #includeReportInfo()
 
-#includeLead("Feature Report")
+###includeLead("Feature Report")
+#includeLead("测试场景报告")
 
-#includeReportTable("Feature", $feature, $parallel)
+###includeReportTable("Feature", $feature, $parallel)
+#includeReportTable("测试场景", $feature, $parallel)
 
 #includeExpandingButtons()
 

@@ -6,28 +6,46 @@
       <th></th>
     #end
     <th></th>
-    <th colspan="6">Steps</th>
-    <th colspan="3">Scenarios</th>
-    <th colspan="2">Features</th>
+##    <th colspan="6">Steps</th>
+##    <th colspan="3">Scenarios</th>
+##    <th colspan="2">Features</th>
+
+##      <th colspan="6">执行步骤</th>
+      <th colspan="3">测试用例</th>
+      <th colspan="2">测试场景</th>
   </tr>
   <tr>
     <th>$table_key</th>
     #if ($parallel)
       <th>Device</th>
     #end
-    <th class="passed">Passed</th>
-    <th class="failed">Failed</th>
-    <th class="skipped">Skipped</th>
-    <th class="pending">Pending</th>
-    <th class="undefined">Undefined</th>
-    <th class="total">Total</th>
+##    <th class="passed">Passed</th>
+##    <th class="failed">Failed</th>
+##    <th class="skipped">Skipped</th>
+##    <th class="pending">Pending</th>
+##    <th class="undefined">Undefined</th>
+##    <th class="total">Total</th>
+##
+##    <th class="passed">Passed</th>
+##    <th class="failed">Failed</th>
+##    <th class="total">Total</th>
+##
+##    <th>Duration</th>
+##    <th>Status</th>
 
-    <th class="passed">Passed</th>
-    <th class="failed">Failed</th>
-    <th class="total">Total</th>
+##      <th class="passed">成功</th>
+##      <th class="failed">失败</th>
+##      <th class="skipped">忽略</th>
+##      <th class="pending">待执行</th>
+##      <th class="undefined">未定义</th>
+##      <th class="total">总计</th>
 
-    <th>Duration</th>
-    <th>Status</th>
+      <th class="passed">通过</th>
+      <th class="failed">失败</th>
+      <th class="total">总计</th>
+
+      <th>耗时（秒）</th>
+      <th>状态</th>
   </tr>
 </thead>
 
