@@ -1,15 +1,11 @@
 package net.masterthought.cucumber;
 
+import net.masterthought.cucumber.sorting.SortingMethod;
+
 import java.io.File;
-import java.util.AbstractMap;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
-
-import net.masterthought.cucumber.sorting.SortingMethod;
 
 public class Configuration {
 
@@ -28,7 +24,9 @@ public class Configuration {
     private List<Map.Entry<String, String>> classifications = new ArrayList<>();
 
     private Collection<Pattern> tagsToExcludeFromChart = new ArrayList<>();
-    private SortingMethod sortingMethod = SortingMethod.NATURAL;
+    // chenjh: 修改测试场景排序规则为按名称排序
+//    private SortingMethod sortingMethod = SortingMethod.NATURAL;
+    private SortingMethod sortingMethod = SortingMethod.ALPHABETICAL;
     private List<String> classificationFiles;
 
     public Configuration(File reportDirectory, String projectName) {

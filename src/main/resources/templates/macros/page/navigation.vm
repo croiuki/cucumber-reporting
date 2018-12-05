@@ -32,7 +32,11 @@
 ##        <li role="presentation" #if($active_tab == "tags")     class="active" #end><a href="overview-tags.html">按标签</a></li>
 ##        <li role="presentation" #if($active_tab == "steps")    class="active" #end><a href="overview-steps.html">Steps</a></li>
       #if ($trends_present)
-          <li role="presentation" #if($active_tab == "trends")  class="active" #end><a href="overview-trends.html">趋势</a></li>
+          <li role="presentation" #if($active_tab == "trends")  class="active" #end><a href="overview-trends.html">仪表盘
+
+
+
+          </a></li>
       #end
         <li role="presentation" #if($active_tab == "failures") class="active" #end><a href="overview-failures.html">失败用例</a></li>
     </ul>

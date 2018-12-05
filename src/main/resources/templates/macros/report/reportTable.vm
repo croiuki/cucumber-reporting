@@ -9,7 +9,9 @@
 
         <tbody>
         <tr>
-          <td class="tagname">$reportable.getName()</td>
+##        <td class="tagname">$reportable.getName()</td>
+##        显示测试场景友好名称
+          <td class="tagname">$reportable.getId()</td>
           #if ($parallel)
             <td>$reportable.getDeviceName()</td>
           #end

@@ -5,7 +5,8 @@
     <div class="docstring indention">
       #set($docStringId = $counter.next())
       <div data-toggle="collapse" class="collapsable-control" data-target="#msg-$docStringId">
-          <a>Doc string</a>
+##          <a>Doc string</a>
+        <a>日志打印</a>
       </div>
       <div id="msg-$docStringId" class="collapse collapsable-details">
         <pre>$docString.getValue()</pre>

@@ -6,7 +6,9 @@
   <tbody>
     #foreach($item in $items)
       <tr>
-        <td class="tagname"><a href="$item.getReportFileName()">$item.getName()</a></td>
+##        <td class="tagname"><a href="$item.getReportFileName()">$item.getName()</a></td>
+##      修改测试场景名称为友好名称
+        <td class="tagname"><a href="$item.getReportFileName()">$item.getId()</a></td>
         #if ($parallel)
           <td>$item.getDeviceName()</td>
         #end

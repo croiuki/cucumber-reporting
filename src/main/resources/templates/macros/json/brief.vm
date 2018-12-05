@@ -1,7 +1,15 @@
 #macro(includeBrief, $keyword, $status, $keyword_value, $expandable, $result)
 
 <div class="brief $status.getRawName()">
-  <span class="keyword indention">$keyword</span>
+    #if ($keyword == "Background")
+        #set ($keyword = "准备工作")
+    #elseif ($keyword == "Scenario")
+        #set ($keyword = "测试用例：")
+    #elseif ($keyword == "Steps")
+        #set ($keyword = "步骤")
+    #end
+
+    <span class="keyword indention">$keyword</span>
   <span class="name">$keyword_value</span>
   #includeDuration($result)
   #if ($expandable)

@@ -39,6 +39,10 @@ public class TrendsOverviewPage extends AbstractPage {
         context.put("undefinedSteps", trends.getUndefinedSteps());
 
         context.put("durations", trends.getDurations());
+
+        // add by chenjh@20181009 趋势图显示最新一次测试的情况
+        context.put("all_features", reportResult.getAllFeatures());
+        context.put("report_summary", reportResult.getFeatureReport());
     }
 
 }

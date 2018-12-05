@@ -21,7 +21,8 @@ $(document).ready(function() {
 
     var context = document.getElementById("scenarios-chart");
     window.myBar = new Chart(context, {
-        type: "doughnut",
+##        type: "doughnut",
+        type: "pie",
         data: chartData,
         options: {
             title: {
@@ -30,9 +31,9 @@ $(document).ready(function() {
 ##                text: "Scenarios"
                 text: "测试用例"
             },
-            circumference: Math.PI,
-            rotation: Math.PI,
-            cutoutPercentage: 70,
+##            circumference: Math.PI,
+##            rotation: Math.PI,
+##            cutoutPercentage: 70,
             responsive: true,
             legend: {
                 display: false
